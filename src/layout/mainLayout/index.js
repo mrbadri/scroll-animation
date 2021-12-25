@@ -1,10 +1,7 @@
-import Support from "./support";
-
-function MainLayout() {
+function MainLayout(props) {
   return (
-    <div className="h-screen bg-blue-500">
-      main contect
-      <Support />
+    <div className="h-screen bg-gray-100 flex justify-center items-center">
+      <div className="w-128 h-screen bg-white">test</div>
     </div>
   );
 }
