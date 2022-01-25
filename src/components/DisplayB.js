@@ -1,13 +1,13 @@
 import { DisplayC } from ".";
 
-const DisplayB = () => {
+const DisplayB = ({ counter }) => {
   return (
     <div style={{ backgroundColor: "#aaa", padding: 15, margin: 20 }}>
-      B - counter value is:
+      B - counter value is: {counter}
       <br />
       <br />
       <br />
-      <DisplayC />
+      <DisplayC counter={counter} />
     </div>
   );
 };

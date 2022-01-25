@@ -1,5 +1,5 @@
-const Minus = () => {
-    return <button>minus</button>;
-  };
-  
-  export default Minus;
+const Minus = ({ onClick }) => {
+  return <button onClick={onClick}>minus</button>;
+};
+
+export default Minus;
