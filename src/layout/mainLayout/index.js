@@ -1,8 +1,6 @@
-function MainLayout(props) {
+function MainLayout({ children }) {
   return (
-    <div className="h-screen bg-gray-100 flex justify-center items-center">
-      <div className="w-128 h-screen bg-white">test</div>
-    </div>
+    <div className="h-screen w-full max-h-full max-w-full">{children}</div>
   );
 }
 
