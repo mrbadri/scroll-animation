@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { DisplayA, DisplayB, DisplayC } from "./components";
+import Add from "./components/Add";
+import Minus from "./components/Minus";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-orange-300 px-5 py-4">
+      <DisplayA />
+      <Add />
+      <DisplayB />
+      <Minus />
+      <DisplayC />
     </div>
   );
 }
