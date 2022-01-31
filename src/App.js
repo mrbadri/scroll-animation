@@ -1,7 +1,9 @@
+import Menu from "./components";
+
 function App() {
   return (
-    <div className="App flex justify-center items-center h-screen overflow-x-hidden overflow-y-auto">
-      <h1>Hello World!</h1>
+    <div className="App flex flex-col justify-center items-center h-screen overflow-x-hidden overflow-y-auto">
+      <Menu></Menu>
     </div>
   );
 }
