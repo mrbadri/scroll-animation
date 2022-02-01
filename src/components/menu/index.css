@@ -33,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--bgColorMenu);
-  border-radius: 2 0px / 40px;
+  border-radius: 20px / 40px;
 }
 
 .menu__item {
@@ -59,6 +59,7 @@ body {
   border-radius: 50%;
   position: absolute;
   transform: scale(0);
+  background-color: #ffb457;
   transition: background-color var(--duration), transform var(--duration);
 }
 
@@ -68,7 +69,8 @@ body {
 
 .menu__item.active::before {
   transform: scale(1);
-  background-color: var(--bgColorItem);
+  background-color: #ffb457;
+
 }
 
 .icon {
