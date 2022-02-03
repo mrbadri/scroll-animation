@@ -6,13 +6,13 @@ const HandleActivitySign = ({ type, position }) => {
       return (
         <>
           <ActivitySign
-            id="activity_sign"
+            id="activity_sign_up"
             type={"curve"}
             color={"#000"}
             style={{ transform: `translateX(${position})` }}
           />
           <ActivitySign
-            id="activity_sign"
+            id="activity_sign_down"
             type={"curve"}
             color={"#000"}
             style={{
@@ -22,15 +22,11 @@ const HandleActivitySign = ({ type, position }) => {
             }}
           />
           <ActivitySign
-            id="activity_sign"
+            id="activity_sign_center"
             type={"circle"}
-            color={"red"}
+            color={"#ffb457"}
             style={{
-              transform: `translateX(${position}) rotate(-180deg)`,
-              top: "99%",
-              bottom: "none",
-              with: "30px",
-              height: "30px",
+              transform: `translateX(${position})`,
             }}
           />
         </>

@@ -1,19 +1,34 @@
 const ActivitySign = ({ style, type, color, children, ...params }) => {
+  const sizes = {
+    w_curve: "10.9",
+    h_curve: "2.4",
+    r_circle: "6.6",
+    time_transition: "0.5s",
+  };
+
+  console.log(sizes.w_curve);
+  console.log(sizes.w_curve / 2 - sizes.r_circle / 2);
+
   const styles = {
     curve: {
       position: "absolute",
       left: 0,
       bottom: "99%",
-      width: "10.9em",
-      height: "2.4em",
-      transition: "0.5s",
+      width: `${sizes.w_curve}em`,
+      height: `${sizes.h_curve}em`,
+      transition: `${sizes.time_transition}em`,
       "will-change": "transform",
       "background-color": color,
       "clip-path": `url('#curve')`,
     },
     circle: {
+      position: "absolute",
+      height: `${sizes.r_circle}em`,
+      width: `${sizes.r_circle}em`,
+      transition: "0.5s",
+      left: `${sizes.w_curve / 2 - sizes.r_circle / 2}em`,
       "background-color": color,
-      "border-raduis": "50%",
+      "border-radius": "50%",
     },
   };
 
