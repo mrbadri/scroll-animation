@@ -64,14 +64,18 @@ body {
 }
 
 .menu__item.active {
-  transform: translate3d(0, -0.8em, 0);
+  .icon {
+    transform: scale(1.25);
+  }
 }
+// .menu__item.active {
+//   transform: translate3d(0, -1.5em, 0);
+// }
 
-.menu__item.active::before {
-  transform: scale(1);
-  background-color: #ffb457;
-
-}
+// .menu__item.active::before {
+//   transform: scale(1.4);
+//   background-color: #ffb457;
+// }
 
 .icon {
   width: 2.6em;
@@ -105,6 +109,12 @@ body {
   will-change: transform;
   background-color: var(--bgColorMenu);
   transition: transform var(--timeOut, var(--duration));
+}
+
+.menu__border.down {
+  transform: rotate(-90deg);
+  // background-color: #ffb457;
+  top: 98%;
 }
 
 .svg-container {

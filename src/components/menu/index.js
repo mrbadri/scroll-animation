@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import reactDom from "react-dom";
 import { useState } from "react/cjs/react.development";
-import dataTest from "./dataTest";
-import "./index.css";
+import dataTest from "../../data";
+import "./index.scss";
 import Item from "./Item";
 
-const Menu = () => {
+const Menu = ({}) => {
   const menu = useRef(null);
   const menuPath = useRef(null);
   const [activeItem, setActiveItem] = useState("");
@@ -58,6 +57,12 @@ const Menu = () => {
           ref={menuPath}
           style={{ transform: `translateX(${position})` }}
           className="menu__border"
+        ></div>
+
+        <div
+          ref={menuPath}
+          style={{ transform: `translateX(${position}) rotate(-180deg)` }}
+          className="menu__border down"
         ></div>
       </menu>
 
