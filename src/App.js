@@ -1,8 +1,14 @@
+import Modal from "./Modal";
+
 function App() {
   return (
-    <div className="App flex justify-center items-center h-screen overflow-x-hidden overflow-y-auto">
-      <h1>Hello World!</h1>
-    </div>
+    <>
+      <Modal >
+        <h1>
+          test Modal
+        </h1>
+        </Modal>
+    </>
   );
 }
 
