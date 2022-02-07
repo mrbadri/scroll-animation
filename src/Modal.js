@@ -15,6 +15,8 @@ const generate = () => {
 const Modal = ({ children, open, onClose }) => {
   const modalBar = useRef(generate());
 
+  console.log("git reset --soft");
+
   useEffect(() => {
     console.log(modalRoot.children.length);
     console.log(modalRoot.children);
