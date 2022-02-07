@@ -25,6 +25,7 @@ const Modal = ({ children, open, onClose }) => {
         console.log("run if");
         modalRoot.removeChild(modalBar.current);
       }
+      
     }
 
     return () => {
