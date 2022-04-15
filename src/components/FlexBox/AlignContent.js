@@ -63,7 +63,7 @@ const AlignContent = () => {
       <section className="flex-1 center">
         {/* section */}
         <div
-          className={`flex gap-5 ${classFlexContainer} content-start bg-indigo-200 px-6 rounded flex-wrap`}
+          className={`flex gap-5 ${classFlexContainer} bg-indigo-200 px-6 rounded flex-wrap`}
           style={{ height: "400px", width: " 400px" }}
         >
           <div
