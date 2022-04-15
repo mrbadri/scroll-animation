@@ -32,7 +32,7 @@ const Gap = () => {
       <section className="flex-1 center">
         {/* section */}
         <div
-          className={`flex gap-5  bg-indigo-200  rounded flex-wrap`}
+          className={`flex bg-indigo-200  rounded flex-wrap`}
           style={{
             height: "400px",
             width: " 400px",
@@ -72,7 +72,7 @@ const Gap = () => {
         </div>
         {/* end section */}
       </section>
-      <NextSlide href="#" />
+      <NextSlide href="#order" />
     </div>
   );
 };
