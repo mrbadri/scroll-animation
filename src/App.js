@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.scss';
+import Slider from './components/Slider';
 
 function App() {
   return (
     <div className="App flex justify-center items-center h-screen overflow-x-hidden overflow-y-auto">
-      <h1>Hello World!</h1>
+      <Slider/>
     </div>
   );
 }

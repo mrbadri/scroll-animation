@@ -1,0 +1,19 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem 1rem;
+  .item {
+    @apply bg-blue-400 text-blue-100 text-2xl h-40 w-40 rounded p-4 transition;
+  }
+
+  .item:not(.active) {
+    @apply cursor-pointer hover:bg-blue-200 hover:text-blue-900 hover:shadow-lg;
+  }
+
+  .item.active {
+    @apply bg-red-400;
+    order: -1;
+    flex: 100% 0 1;
+  }
+}
