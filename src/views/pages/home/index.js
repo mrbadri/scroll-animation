@@ -1,7 +1,9 @@
-import Direction from "../../../components/home/Direction";
-import Flow from "../../../components/home/Flow";
-import JustifyContent from "../../../components/home/JustifyContent";
-import Wrap from "../../../components/home/Wrap";
+import AlignContent from "../../../components/FlexBox/AlignContent";
+import AlignItem from "../../../components/FlexBox/AlignItem";
+import Direction from "../../../components/FlexBox/Direction";
+import Flow from "../../../components/FlexBox/Flow";
+import JustifyContent from "../../../components/FlexBox/JustifyContent";
+import Wrap from "../../../components/FlexBox/Wrap";
 
 const Home = () => {
     return ( <div className="w-full h-full">
@@ -9,6 +11,8 @@ const Home = () => {
         <Wrap/>
         <Flow/>
         <JustifyContent/>
+        <AlignItem/>
+        <AlignContent/>
     </div> );
 }
  

@@ -72,7 +72,7 @@ const JustifyContent = () => {
         </div>
         {/* end section */}
       </section>
-      <NextSlide href="#align-item" />
+      <NextSlide href="#align_item" />
     </div>
   );
 };
