@@ -53,19 +53,19 @@ const AlignSelf = () => {
           style={{ height: "400px" }}
         >
           <div
-            className={`bg-blue-${3}00 text-blue-100 text-2xl w-40 rounded p-4 transition shadow shadow-inner`}
+            className={`bg-blue-${3}00 text-blue-100 text-2xl w-40 rounded p-4 transition  shadow-inner`}
           >
             Flex Item {1}
           </div>
           <div
-            className={`bg-blue-${4}00 ${classFlexItem} text-blue-100 pt-10 text-2xl  w-40 rounded p-4 transition shadow shadow-inner`}
+            className={`bg-red-${4}00  ${classFlexItem} text-red-100 pt-10 text-2xl  w-40 rounded p-4 transition  shadow-inner`}
           >
-            Flex Item {1}
+            Flex Item {3}
           </div>
           <div
-            className={`bg-blue-${5}00 text-blue-100 text-2xl  w-40 rounded p-4 transition shadow shadow-inner`}
+            className={`bg-blue-${5}00 text-blue-100 text-2xl  w-40 rounded p-4 transition  shadow-inner`}
           >
-            Flex Item {1}
+            Flex Item {3}
           </div>
         </div>
         {/* end section */}
