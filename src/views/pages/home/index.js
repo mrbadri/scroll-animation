@@ -6,6 +6,7 @@ import Gap from "../../../components/FlexBox/Gap";
 import Grow from "../../../components/FlexBox/Grow";
 import JustifyContent from "../../../components/FlexBox/JustifyContent";
 import Order from "../../../components/FlexBox/Order";
+import Shrink from "../../../components/FlexBox/Shrink";
 import Wrap from "../../../components/FlexBox/Wrap";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <Gap/>
         <Order/>
         <Grow/>
+        <Shrink/>
     </div> );
 }
  

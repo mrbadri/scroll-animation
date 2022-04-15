@@ -112,7 +112,7 @@ const Order = () => {
         </div>
         {/* end section */}
       </section>
-      <NextSlide href="#" />
+      <NextSlide href="#grow" />
     </div>
   );
 };
