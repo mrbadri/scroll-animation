@@ -22,12 +22,15 @@ const Flow = () => {
           >
             nowrap
           </span>
+          ;
         </span>
       </div>
       <section className="flex-1 center">
-        <div className="text-6xl text-gray-500 border shadow-inner py-10 px-14 rounded bg-gray-50 font-semibold">flex-flow: flex-direction flex-wrap ;</div>
+        <div className="text-6xl text-gray-500 border shadow-inner py-10 px-14 rounded bg-gray-50 font-semibold">
+          flex-flow: flex-direction flex-wrap ;
+        </div>
       </section>
-      <NextSlide href="#flow" />
+      <NextSlide href="#justify_content" />
     </div>
   );
 };

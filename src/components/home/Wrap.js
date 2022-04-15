@@ -28,6 +28,7 @@ const Wrap = () => {
           >
             wrap-reverse,
           </span>
+          ;
         </span>
       </div>
       <section className="flex-1 center">

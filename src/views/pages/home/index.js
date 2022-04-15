@@ -1,5 +1,6 @@
 import Direction from "../../../components/home/Direction";
 import Flow from "../../../components/home/Flow";
+import JustifyContent from "../../../components/home/JustifyContent";
 import Wrap from "../../../components/home/Wrap";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <Direction/>
         <Wrap/>
         <Flow/>
+        <JustifyContent/>
     </div> );
 }
  
