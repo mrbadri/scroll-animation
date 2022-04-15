@@ -3,29 +3,29 @@ import NextSlide from "../NextSlide";
 
 const initialItems = {
   item1: {
-    shrink: 1,
+    basis: 1,
   },
   item2: {
-    shrink: 1,
+    basis: 1,
   },
   item3: {
-    shrink: 1,
+    basis: 1,
   },
   item4: {
-    shrink: 1,
+    basis: 1,
   },
 };
 
-const Shrink = () => {
+const Basis = () => {
   const [items, setItems] = useState(initialItems);
 
   return (
-    <div id="shrink" className="w-screen h-screen center flex-col relative">
+    <div id="basis" className="w-screen h-screen center flex-col relative">
       <h1 className="text-6xl font-bold text-blue-900 p-16">
-        Flex shrink<span className="text-2xl text-purple-500">(Flex Item)</span>
+        Flex basis<span className="text-2xl text-purple-500">(Flex Item)</span>
       </h1>
       <div className="text-3xl text-gray-600 font-bold bg-blue-100 shadow px-6 py-4 rounded">
-        flex-shrink : <span className="text-blue-800 font-semibold">1 ;</span>
+        flex-basis : <span className="text-blue-800 font-semibold">1 ;</span>
       </div>
       <section className="flex-1 center">
         {/* section */}
@@ -36,89 +36,89 @@ const Shrink = () => {
           {/* item 1 */}
           <div
             className={`bg-blue-${4}00 text-blue-100 text-2xl rounded p-4 transition shadow shadow-inner`}
-            style={{ "flex-shrink": `${items.item1.shrink}` }}
+            style={{ "flex-basis": `${items.item1.basis}` }}
           >
             Flex Item {1}
             <br />
             <div className="p-2 mt-3 flex font-semibold">
-              <span>shrink: </span>
+              <span>basis: </span>
               <input
                 className=" w-16 font-semibold text-center ml-2 bg-transparent shadow-inner focus:outline-none rounded"
                 onChange={(e) => {
                   console.log(e.target.value);
-                  setItems({ ...items, item1: { shrink: e.target.value } });
+                  setItems({ ...items, item1: { basis: e.target.value } });
                 }}
-                value={items.item1.shrink}
-                type="number"
+                value={items.item1.basis}
+                type="text"
               />
             </div>
           </div>
           {/* item 2 */}
           <div
             className={`bg-blue-${5}00 text-blue-100 text-2xl rounded p-4 transition shadow shadow-inner`}
-            style={{ "flex-shrink": `${items.item2.shrink}` }}
+            style={{ "flex-basis": `${items.item2.basis}` }}
           >
             Flex Item {2}
             <br />
             <div className="p-2 mt-3 flex font-semibold">
-              <span>shrink: </span>
+              <span>basis: </span>
               <input
                 className=" w-16 font-semibold text-center ml-2 bg-transparent shadow-inner focus:outline-none rounded"
                 onChange={(e) => {
                   console.log(e.target.value);
-                  setItems({ ...items, item2: { shrink: e.target.value } });
+                  setItems({ ...items, item2: { basis: e.target.value } });
                 }}
-                value={items.item2.shrink}
-                type="number"
+                value={items.item2.basis}
+                type="text"
               />
             </div>
           </div>
           {/* item 3 */}
           <div
             className={`bg-blue-${6}00 text-blue-100 text-2xl rounded p-4 transition shadow shadow-inner`}
-            style={{ "flex-shrink": `${items.item3.shrink}` }}
+            style={{ "flex-basis": `${items.item3.basis}` }}
           >
             Flex Item {3}
             <br />
             <div className="p-2 mt-3 flex font-semibold">
-              <span>shrink: </span>
+              <span>basis: </span>
               <input
                 className=" w-16 font-semibold text-center ml-2 bg-transparent shadow-inner focus:outline-none rounded"
                 onChange={(e) => {
                   console.log(e.target.value);
-                  setItems({ ...items, item3: { shrink: e.target.value } });
+                  setItems({ ...items, item3: { basis: e.target.value } });
                 }}
-                value={items.item3.shrink}
-                type="number"
+                value={items.item3.basis}
+                type="text"
               />
             </div>
           </div>
           {/* item 4 */}
           <div
             className={`bg-blue-${4}00 text-blue-100 text-2xl rounded p-4 transition shadow shadow-inner`}
-            style={{ "flex-shrink": `${items.item4.shrink}` }}
+            style={{ "flex-basis": `${items.item4.basis}` }}
           >
             Flex Item {4}
             <br />
             <div className="p-2 mt-3 flex font-semibold">
-              <span>shrink: </span>
+              <span>basis: </span>
               <input
                 className=" w-16 font-semibold text-center ml-2 bg-transparent shadow-inner focus:outline-none rounded"
                 onChange={(e) => {
                   console.log(e.target.value);
-                  setItems({ ...items, item4: { shrink: e.target.value } });
+                  setItems({ ...items, item4: { basis: e.target.value } });
                 }}
-                value={items.item4.shrink}
-                type="number"
+                value={items.item4.basis}
+                type="text"
               />
             </div>
           </div>
         </div>
         {/* end section */}
       </section>
-      <NextSlide href="#basis" />
+      <NextSlide href="#align-self" />
     </div>
   );
 };
 
-export default Shrink;
+export default Basis;

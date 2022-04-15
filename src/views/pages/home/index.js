@@ -1,5 +1,6 @@
 import AlignContent from "../../../components/FlexBox/AlignContent";
 import AlignItem from "../../../components/FlexBox/AlignItem";
+import Basis from "../../../components/FlexBox/Basis";
 import Direction from "../../../components/FlexBox/Direction";
 import Flow from "../../../components/FlexBox/Flow";
 import Gap from "../../../components/FlexBox/Gap";
@@ -21,6 +22,7 @@ const Home = () => {
         <Order/>
         <Grow/>
         <Shrink/>
+        <Basis/>
     </div> );
 }
  
