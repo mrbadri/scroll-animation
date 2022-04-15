@@ -13,16 +13,14 @@ const Gap = () => {
           <input
             className="bg-transparent w-40 text-center focus:outline-none"
             placeholder="row-gap"
-            onBlur={(e) => {
-              console.log(e.target.value);
+            onChange={(e) => {
               setGap({ ...gap, row: e.target.value });
             }}
           />
           <input
             className="bg-transparent w-40 text-center mr-4 focus:outline-none"
             placeholder="column-gap"
-            onBlur={(e) => {
-              console.log(e.target.value);
+            onChange={(e) => {
               setGap({ ...gap, column: e.target.value });
             }}
           />

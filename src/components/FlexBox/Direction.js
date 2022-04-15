@@ -42,7 +42,7 @@ const Direction = () => {
         <div
           className={`flex gap-5 ${classFlexContainer} bg-indigo-200 p-8 rounded`}
         >
-          {[1, 2, 3, 4, 5].map((item) => (
+          {[1, 2, 3, 4].map((item) => (
             <div
               className={`bg-blue-${
                 item + 2
