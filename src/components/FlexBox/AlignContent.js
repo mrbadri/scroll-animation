@@ -94,7 +94,7 @@ const AlignContent = () => {
         </div>
         {/* end section */}
       </section>
-      <NextSlide href="#" />
+      <NextSlide href="#gap" />
     </div>
   );
 };

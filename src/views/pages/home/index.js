@@ -2,6 +2,7 @@ import AlignContent from "../../../components/FlexBox/AlignContent";
 import AlignItem from "../../../components/FlexBox/AlignItem";
 import Direction from "../../../components/FlexBox/Direction";
 import Flow from "../../../components/FlexBox/Flow";
+import Gap from "../../../components/FlexBox/Gap";
 import JustifyContent from "../../../components/FlexBox/JustifyContent";
 import Wrap from "../../../components/FlexBox/Wrap";
 
@@ -13,6 +14,7 @@ const Home = () => {
         <JustifyContent/>
         <AlignItem/>
         <AlignContent/>
+        <Gap/>
     </div> );
 }
  
